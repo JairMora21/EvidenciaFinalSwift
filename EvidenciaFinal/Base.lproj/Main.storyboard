@@ -88,22 +88,24 @@
                     <navigationItem key="navigationItem" id="mUc-J7-ka2">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="8TS-QJ-tfu">
                             <connections>
-                                <action selector="nuevoJugador:" destination="5MB-ok-L6v" id="d5f-5d-4Yh"/>
+                                <action selector="nuevoJugador:" destination="5MB-ok-L6v" id="Ood-Fj-daD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="nuevoJugador" destination="8TS-QJ-tfu" id="Lyx-0z-whr"/>
                         <outlet property="tablaEquipo" destination="ld8-wL-oUb" id="b0d-oI-hAl"/>
+                        <outlet property="tablaJugadores" destination="ld8-wL-oUb" id="mAS-wI-NTR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRH-rw-8uK" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="202.89855072463769" y="-294.64285714285711"/>
         </scene>
-        <!--View Controller Partidos-->
+        <!--View Controller Prueba-->
         <scene sceneID="mMF-CS-C0N">
             <objects>
-                <viewController id="ULk-yz-AxO" customClass="ViewControllerPartidos" customModule="Evidencia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ULk-yz-AxO" customClass="ViewControllerPrueba" customModule="EvidenciaFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6rm-Sk-iNs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,8 +143,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="6mp-7o-cHv">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="mLf-ap-h9g"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="mLf-ap-h9g">
+                            <connections>
+                                <action selector="nuevoPartido:" destination="ULk-yz-AxO" id="amI-Pm-BfX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="listaPartidos" destination="hv3-NA-V1E" id="P6a-EB-s0v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAv-mj-5CU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
