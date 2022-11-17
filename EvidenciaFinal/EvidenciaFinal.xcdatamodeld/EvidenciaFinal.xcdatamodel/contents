@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1824" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Jugador" representedClassName="Jugador" syncable="YES" codeGenerationType="class">
+        <attribute name="dorsal" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Partido" representedClassName="Partido" syncable="YES" codeGenerationType="class">
+        <attribute name="golesContra" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="golesFavor" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rival" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Jugador" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="Partido" positionX="-54" positionY="-9" width="128" height="88"/>
+    </elements>
 </model>
